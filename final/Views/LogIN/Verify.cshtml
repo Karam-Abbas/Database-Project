@@ -1,0 +1,37 @@
+﻿@model final.Models.account
+
+@{
+    ViewBag.Title = "Verify";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<section class="main">
+    <div class="logo text-center">
+        <h1> <a href="SignIN.cshtml"> IBMS Log In/Sign IN Form</a></h1>
+    </div>
+    <div class="content-w3ls text-center">
+        <img src="images/admin.png" alt="" class="img-responsive">
+        <form action="#" method="post">
+            <div class="wthree-field">
+                <input name="Name" id="text1" type="text" value="" placeholder="Username" required>
+            </div>
+            <div class="wthree-field">
+                <input name="Password" id="myInput" type="Password" placeholder="Password">
+            </div>
+            <div class="wthree-field">
+                <button type="submit" class="btn">Sign In</button>
+            </div>
+            <div class="login-bottom">
+                <a href="#url" class="">Create An Account</a>
+            </div>
+        </form>
+    </div>
+    <div class="copyright">
+        <p>
+            © 2020 Universe Signin Form. Made with love | Designed by <a href="https://w3layouts.com" target="_blank">W3layouts</a>
+        </p>
+    </div>
+</section>
+<p>
+    @Html.ActionLink("SignIN", "Verify", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Cancel", "SignIN")
+</p>

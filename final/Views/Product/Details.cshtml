@@ -1,0 +1,93 @@
+﻿@model final.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+@if (TempData["ErrorMessage"] != null)
+{
+<div class="alert alert-danger">
+    <strong> ERROR: </strong>  @TempData=["ErrorMessage"]
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span>&times;</span>
+    </button>
+
+</div>
+}
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.product_cost)
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.product_cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_name)
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.product_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_expiry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_expiry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_final_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_final_price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.product_code }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
