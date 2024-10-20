@@ -1,4 +1,4 @@
-# Bussiness Organizing System
+# Bussiness Management System
 This is a **Database Management** project implemented using ASP.NET MVC. The project is built with the Model-View-Controller architecture and includes database interaction through models and controllers. It features CRUD (Create, Read, Update, Delete) operations and integrates with a backend SQL database.
 
 ## Project Structure
